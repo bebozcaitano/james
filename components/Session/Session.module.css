@@ -1,0 +1,22 @@
+.Session{
+    padding: 5rem 0;
+    text-align: justify;
+}
+
+.Session h1, .Session h2{
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+
+
+.Session h3, .Session h4, .Session p { 
+    font-size: 1.0625rem;
+    line-height: 1.55em;
+    color: #999;
+    
+}
+
+.Session h3, .Session h4{
+    text-align: center;
+}    

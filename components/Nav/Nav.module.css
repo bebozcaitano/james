@@ -1,0 +1,76 @@
+
+.Spacer{
+    flex: 1;
+}
+
+
+
+.Toolbar{
+    position: fixed;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+   
+    transition: all 250ms ease 0s;
+}
+
+.Toolbar__background {
+    position: fixed;
+    align-items: center;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+
+    color: #FFF;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(0, 172, 193, 0.46);
+    background-color: #00acc1;
+    transition: all 250ms ease 0s;
+} 
+
+
+.Toolbar__navigation{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    transition: all 250ms ease 0s;
+}
+
+.Toolbar__navigation__background{
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 2rem 0.5rem 2rem;
+    transition: all 250ms ease 0s;
+}
+
+.Toolbar__logo a {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.Toolbar__navigation_items ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.Toolbar__navigation_items li {
+    padding: 0 1rem;
+}
+
+.Toolbar__navigation_items a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.Toolbar__navigation_items a:hover,
+.Toolbar__navigation_items a:active{
+    color: white;
+}

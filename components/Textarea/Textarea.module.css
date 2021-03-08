@@ -1,0 +1,68 @@
+  .Field {
+    display: flex;
+    text-align: left;
+    flex-flow: column-reverse;    
+    margin-bottom: 1rem;
+    min-height: 3rem;
+    box-sizing: border-box;
+  }
+
+  .Label, .TextArea {
+    transition: all .3s;
+    touch-action: manipulation;
+  }
+  
+  .Label{
+    color: #9e9e9e;
+    letter-spacing: 0.03em;
+  }
+
+  .TextArea {
+    resize: none;
+    font-family: inherit;
+    line-height: normal;
+    overflow-y: hidden;
+    
+    font-size: 1rem;
+    border: 0;
+    border-bottom: 1px solid #9e9e9e;
+    -webkit-appearance: none;
+    padding: 0;
+    padding-bottom: 0.3rem;
+    cursor: text;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+  
+  .TextArea:focus {
+    outline: 0;
+    border-bottom: 1px solid #ff0000;
+  }
+  
+  .TextArea:placeholder-shown + .Label {
+    cursor: text;
+    white-space: nowrap;
+    
+   
+    text-overflow: ellipsis;
+    transform-origin: left bottom;
+
+    transform: translate(0, 1rem) ;
+  }
+
+  .TextArea::-webkit-input-placeholder {
+    opacity: 0;
+    transition: inherit;
+  }
+
+  .TextArea:focus::-webkit-input-placeholder {
+    opacity: 1;
+  }
+
+.TextArea:focus + .Label,
+.TextArea:not(:placeholder-shown) + .Label{
+    transform: translateY(-0.2rem);
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
