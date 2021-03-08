@@ -3,7 +3,7 @@ import Session from '../components/Session/Session'
 import Youtube from '../components/Youtube/Youtube'
 import Input from '../components/Input/Input'
 import Textarea from '../components/Textarea/Textarea'
-import {Button, ColorType, ButtonType, ButtonFloatType} from '../components/Button/Button'
+import {Button, ButtonFloatType} from '../components/Button/Button'
 
 const IndexPage = () => (
   <Layout>
